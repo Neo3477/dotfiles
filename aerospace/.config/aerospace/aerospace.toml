@@ -1,0 +1,114 @@
+# ~~ Start Command nach dem Login ~~
+after-login-command = []
+
+# ~~ Start Command nach dem Programmstart ~~
+after-startup-command = [
+    'exec-and-forget sketchybar',
+    'exec-and-forget /opt/homebrew/bin/borders active_color=0xff83a598 inactive_color=0xff83a598 width=4.0 style=round',
+]
+
+exec-on-workspace-change = [
+    '/bin/bash',
+    '-c',
+    '/opt/homebrew/opt/sketchybar/bin/sketchybar --trigger aerospace_workspace_change AEROSPACE_FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE AEROSPACE_PREV_WORKSPACE=$AEROSPACE_PREV_WORKSPACE',
+]
+
+# ~~ Start beim Login ~~
+start-at-login = true
+
+# ~~ Normalisierung ~~
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+
+# ~~ Akkordeon ~~
+accordion-padding = 30
+
+# ~~ Root Container ~~
+default-root-container-layout = 'tiles'
+
+# ~~ Root Container Orientation ~~
+default-root-container-orientation = 'auto'
+
+# ~~ Mausverhalten bei Fokusänderungen ~~
+on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+on-focus-changed = ['move-mouse window-lazy-center']
+
+# ~~ Automatisch verstecken von macOS versteckten Apps ~~
+automatically-unhide-macos-hidden-apps = false
+
+# ~~ Tastaturlayout ~~
+[key-mapping]
+preset = 'qwerty'
+
+# ~~ Fensterabstand ~~
+[gaps]
+inner.horizontal = 21
+inner.vertical =   21
+outer.left =       21
+outer.bottom =     12
+outer.top =        50
+outer.right =      21
+
+# ~~ Hauptmodus Tastenkombinationen ~~
+[mode.main.binding]
+
+# ~~ Fenster zusammenfügen ~~
+alt-shift-h = ['join-with left']
+alt-shift-j = ['join-with down']
+alt-shift-k = ['join-with up']
+alt-shift-l = ['join-with right']
+
+alt-a = 'layout accordion tiles'
+alt-h = 'layout horizontal vertical'
+alt-f = 'layout floating tiling'
+
+# ~~ Fokusbewegung ~~
+alt-left = 'focus left'
+alt-down = 'focus down'
+alt-up = 'focus up'
+alt-right = 'focus right'
+
+# ~~ Fensterbewegung ~~
+alt-shift-left = 'move left'
+alt-shift-down = 'move down'
+alt-shift-up = 'move up'
+alt-shift-right = 'move right'
+
+# ~~ Größenänderung ~~
+alt-shift-slash = 'resize smart -50'
+alt-shift-rightSquareBracket = 'resize smart +50'
+
+# ~~ Workspace Wechsel ~~m
+alt-1 = 'workspace 1'
+alt-2 = 'workspace 2'
+alt-3 = 'workspace 3'
+cmd-shift-left = 'workspace prev'
+cmd-shift-right = 'workspace next'
+
+# ~~ Fenster zu Workspace verschieben ~~
+alt-shift-1 = 'move-node-to-workspace 1'
+alt-shift-2 = 'move-node-to-workspace 2'
+alt-shift-3 = 'move-node-to-workspace 3'
+cmd-shift-up = 'move-node-to-workspace next'
+cmd-shift-down  = 'move-node-to-workspace prev'
+
+
+# ~~ Workspace Wechsel zurück und vorwärts ~~
+alt-tab = 'workspace-back-and-forth'
+
+# ~~ Workspace zu Monitor verschieben ~~
+alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
+
+# ~~ Service Modus ~~
+alt-shift-m = 'mode service'
+
+# ~~ Service Modus Tastenkombinationen ~~
+[mode.service.binding]
+esc = ['reload-config', 'mode main']
+r = ['flatten-workspace-tree', 'mode main'] 
+f = ['layout floating tiling', 'mode main'] 
+backspace = ['close-all-windows-but-current', 'mode main']
+
+
+
+
