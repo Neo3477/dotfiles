@@ -1,7 +1,7 @@
 # Backup meiner Dotfiles mit git stow
 
 
-![Bildbeschreibung](dotfiles/Screenshot.jpg)
+![Screenshot](Screenshot.jpg)
 
 
 Dies ist mein persönliches Repository für Dotfiles. Es enthält Konfigurationen für verschiedene Tools und Programme, die ich täglich benutze. Dieses Repository ist so eingerichtet, dass es mit GNU Stow verwaltet wird, um die Konfigurationen einfach auf andere Systeme zu übertragen.
