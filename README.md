@@ -42,10 +42,11 @@ cd ~/dotfiles
 Benutze GNU Stow, um die gewünschten Konfigurationen zu installieren:
 
 ```bash
-stow tmux    # Installiert die Tmux-Konfiguration
-stow zsh     # Installiert die Zsh-Konfiguration
-stow nvim    # Installiert die Neovim-Konfiguration
-stow wezterm # Installiert die Wezterm-Konfiguration
+stow tmux       # Installiert die Tmux-Konfiguration
+stow zsh        # Installiert die Zsh-Konfiguration
+stow nvim       # Installiert die Neovim-Konfiguration
+stow sketchybar # Installiert die Sketchybar-Konfiguration (Nur für MacOS)
+stow aerospace  # Installiert die Aerospace-Konfiguration (Nur für MacOS)
 ....
 ```
 
