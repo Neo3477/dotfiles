@@ -11,5 +11,6 @@ tmux/.tmux/plugins/*/.github
 .DS_Store
 fastfetch/**/.DS_Store
 fastfetch/.DS_Store
+
 tmux/.DS_Store
 tmux/.tmux/plugins/.DS_Store
