@@ -7,6 +7,9 @@ export EDITOR=nvim
 # Set bat Theme
 export BAT_THEME="Catppuccin Macchiato"
 
+# Set Eza config Path
+export EZA_CONFIG_DIR="${HOME}/.config/eza"
+
 # Go Path
 export GOPATH=$(go env GOPATH)
 export GOBIN=$GOPATH/bin
