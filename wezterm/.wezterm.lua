@@ -27,7 +27,7 @@ config.use_fancy_tab_bar = false
 config.enable_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = false
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
-config.window_background_opacity = 1.00
+config.window_background_opacity = 0.80
 config.macos_window_background_blur = 20
 
 return config
