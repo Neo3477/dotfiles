@@ -52,4 +52,22 @@ stow aerospace  # Installiert die Aerospace-Konfiguration (Nur für MacOS)
 
 Jeder Befehl erstellt Symlinks von den Dotfiles im Repository zu den entsprechenden Orten im Home-Verzeichnis.
 
+>[!ATTENTION]
+>Sketchybar
+>Damit das Weather Script funktioniert, braucht man einen API Key
+>den bekommt man hier: https://www.weatherapi.com/
+>der Key + City muss in eine weather.env.sh eingetragen werden
+>und sollte im Ordner scripts liegen
+
+```bash
+KEY=your API Key
+CITY=your City
+```
+
+>[!TIP]
+>Das install Script bietet zwei Möglichkeiten:
+>install.sh -m (für MacOS) und
+>install.sh -l (für Linux, auf Arch Basis es wird pacman genutzt)
+>bei der Installation für Linux wird Sketchybar und Aerospace NICHT installiert
+
 
