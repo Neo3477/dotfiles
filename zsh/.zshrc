@@ -5,7 +5,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export EDITOR=nvim
 
 # Set bat Theme
-export BAT_THEME="Catppuccin Macchiato"
+export BAT_THEME="gruvbox-dark"
 
 # Set Eza config Path
 export EZA_CONFIG_DIR="${HOME}/.config/eza"
