@@ -14,3 +14,6 @@ fastfetch/.DS_Store
 
 tmux/.DS_Store
 tmux/.tmux/plugins/.DS_Store
+
+# Ignore Weather_API_Key
+sketchybar/.config/sketchybar/scripts/weatherapi.env
