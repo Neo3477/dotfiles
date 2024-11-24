@@ -18,6 +18,15 @@ install_macos() {
 
   # Tools installieren
   tools=(
+    ffmpegthumbnailer
+    ffmpeg
+    sevenzip
+    jq
+    poppler
+    fd
+    ripgrep
+    fzf
+    imagemagick
     fastfetch
     zsh
     tmux
@@ -59,6 +68,15 @@ install_linux() {
 
   # Tools installieren
   tools=(
+    ffmpegthumbnailer
+    ffmpeg
+    p7zip
+    jq
+    poppler
+    fd
+    ripgrep
+    fzf
+    imagemagick
     fastfetch
     zsh
     tmux
