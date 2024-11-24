@@ -1,2 +1,0 @@
-KEY="YOUR_API_KEY"
-CITY=Latendorf
