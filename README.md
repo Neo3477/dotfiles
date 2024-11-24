@@ -52,7 +52,7 @@ stow aerospace  # Installiert die Aerospace-Konfiguration (Nur für MacOS)
 
 Jeder Befehl erstellt Symlinks von den Dotfiles im Repository zu den entsprechenden Orten im Home-Verzeichnis.
 
->[!INFO]
+>[!TIP]
 >Sketchybar
 >Damit das Weather Script funktioniert, braucht man einen API Key
 >den bekommt man hier: https://www.weatherapi.com/
