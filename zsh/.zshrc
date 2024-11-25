@@ -50,7 +50,7 @@ source $ZSH/oh-my-zsh.sh
 source <(fzf --zsh)
 
 # Aliases
-alias ls="eza --icons=always"
+alias ls="eza --icons=always --git --no-user --group-directories-first"
 alias zj="zellij"
 alias yz="yazi"
 alias fk="fuck"
