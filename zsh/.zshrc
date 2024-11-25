@@ -51,24 +51,18 @@ source <(fzf --zsh)
 
 # Aliases
 alias ls="eza --icons=always --git --no-user --group-directories-first"
-alias zj="zellij"
 alias yz="yazi"
 alias fk="fuck"
 alias dl="cd ~/Downloads"
 alias dk="cd ~/Documents"
-alias zef="zellij edit -f"
-alias ze="zellij edit"
-alias zr="zellij run --floating --close-on-exit --"
+alias df="cd ~/dotfiles"
 alias szsh="source ~/.zshrc"
 alias ff="fastfetch -c ~/.config/fastfetch/config1.jsonc"
 alias time="tty-clock -C4 -c -f %A-%d-%B-%Y"
 alias fe='fzf_find_edit'
 alias tm="tmux"
 alias nv="nvim"
-alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
-alias dfa="dotfiles add"
-alias dfc="dotfiles commit -m"
-alias dfp="dotfiles push origin main"
+alias x="exit"
 
 eval $(thefuck --alias)
 eval "$(starship init zsh)"
