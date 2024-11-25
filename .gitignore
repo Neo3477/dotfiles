@@ -20,3 +20,7 @@ sketchybar/.config/sketchybar/scripts/weather.env.sh
 
 # ignore .git in yazi
 yazi/.config/yazi/plugins/lazygit.yazi/.git
+
+# stow local
+.stow-local-ignore
+yazi/.stow-local-ignore
