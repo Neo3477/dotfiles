@@ -58,6 +58,7 @@ Jeder Befehl erstellt Symlinks von den Dotfiles im Repository zu den entsprechen
 
 >[!NOTE]
 >Sketchybar
+>
 >Damit das Weather Script funktioniert, braucht man einen API Key
 >den bekommt man hier: https://www.weatherapi.com/
 >der Key + City muss in eine weather.env.sh eingetragen werden
