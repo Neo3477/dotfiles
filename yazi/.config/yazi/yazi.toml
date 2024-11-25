@@ -22,3 +22,8 @@ sixel_fraction  = 10
 ueberzug_scale  = 1
 ueberzug_offset = [ 10, 10, 10, 10 ]
 
+[plugin]
+prepend_previewers = [
+  { name = "*.md", run = "mdcat" },
+]
+
