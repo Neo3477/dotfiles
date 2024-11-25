@@ -11,6 +11,7 @@ Dies ist mein persönliches Repository für Dotfiles. Es enthält Konfiguratione
 ### Voraussetzungen
 
 1. Git
+
 Stelle sicher das git installiert ist:
 
 ```bash
@@ -20,6 +21,7 @@ brew install git          # macOS
 ```
 
 2. GNU Stow
+
 Installiere GNU Stow, um die Symlinks für die Dotfiles zu verwalten
 
 ```bash
@@ -31,6 +33,7 @@ brew install stow         # macOS
 ### Schritte zur Installation
 
 1. Repository klonen
+
 Klone das Dotfiles-Repository in dein Home-Verzeichnis oder einen gewünschten Ordner:
 
 ```bash
@@ -39,6 +42,7 @@ cd ~/dotfiles
 ```
 
 2. Konfiguration einrichten
+
 Benutze GNU Stow, um die gewünschten Konfigurationen zu installieren:
 
 ```bash
