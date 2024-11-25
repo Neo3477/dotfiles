@@ -27,3 +27,4 @@ yazi/.DS_Store
 # stow local
 .stow-local-ignore
 yazi/.stow-local-ignore
+yazi/.config/yazi/.DS_Store
