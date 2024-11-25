@@ -17,3 +17,6 @@ tmux/.tmux/plugins/.DS_Store
 
 # Ignore Weather_API_Key
 sketchybar/.config/sketchybar/scripts/weather.env.sh
+
+# ignore .git in yazi
+yazi/.config/yazi/plugins/lazygit.yazi/.git
