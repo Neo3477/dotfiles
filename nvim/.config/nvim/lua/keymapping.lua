@@ -9,5 +9,6 @@ vim.keymap.set('n', '<leader>tc', ':tabclose<CR>', { noremap = true, silent = tr
 vim.keymap.set('n', '<leader>v', ':vsplit<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>h', ':split<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>c', ':close<CR>', { noremap = true, silent = true })
-vim.keymap.set('n', '<leader>m', ':Markview splitToggle<CR>', { noremap = true, silent = true }) 
+vim.keymap.set('n', '<leader>m', ':Markview splitToggle<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>y', ':Yazi<CR>', { noremap = true, silent = true }) 
 
