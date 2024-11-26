@@ -56,6 +56,7 @@ alias fk="fuck"
 alias dl="cd ~/Downloads"
 alias dk="cd ~/Documents"
 alias df="cd ~/dotfiles"
+alias cf="cd ~/.config"
 alias szsh="source ~/.zshrc"
 alias ff="fastfetch -c ~/.config/fastfetch/config1.jsonc"
 alias time="tty-clock -C4 -c -f %A-%d-%B-%Y"
@@ -63,6 +64,7 @@ alias fe='fzf_find_edit'
 alias tm="tmux"
 alias nv="nvim"
 alias x="exit"
+alias lg="Lazygit"
 
 eval $(thefuck --alias)
 eval "$(starship init zsh)"
