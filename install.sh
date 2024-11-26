@@ -35,6 +35,8 @@ install_macos() {
     starship
     wezterm
     yazi
+    git
+    git stow
   )
 
   echo "Tools installieren: ${tools[*]}"
@@ -85,6 +87,8 @@ install_linux() {
     starship
     wezterm
     yazi
+    git
+    git stow
   )
 
   echo "Tools installieren: ${tools[*]}"
