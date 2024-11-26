@@ -1,5 +1,7 @@
 local gruvbox_material_theme = require("yatline-gruvbox-material"):setup({ mode = "dark", toughness = "soft" })
 --local catppuccin_theme = require("yatline-catppuccin"):setup("mocha")
+
+require("full-border"):setup()
 require("yatline"):setup({
 	theme = gruvbox_material_theme,
 --	theme = catppuccin_theme,
