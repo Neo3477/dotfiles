@@ -137,8 +137,8 @@ local function gruvbox_material_dark_theme(toughness)
 		style_a = {
 			fg = gruvbox_material_dark_palette.bg0,
 			bg_mode = {
-				normal = gruvbox_material_dark_palette.gray2,
-				select = gruvbox_material_dark_palette.blue,
+				normal = gruvbox_material_dark_palette.blue,
+				select = gruvbox_material_dark_palette.yellow,
 				un_set = gruvbox_material_dark_palette.orange
 			}
 		},
