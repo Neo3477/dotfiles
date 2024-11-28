@@ -83,6 +83,7 @@ local show_background
 
 local section_order = { "section_a", "section_b", "section_c" }
 
+
 --=================--
 -- Component Setup --
 --=================--
