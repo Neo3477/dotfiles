@@ -136,5 +136,9 @@ require("yatline-githead"):setup({
 
 -- style git.yazi plugin
 THEME.git = THEME.git or {}
-THEME.git.modified_sign = "M"
-THEME.git.deleted_sign = "D"
+THEME.git.modified_sign  = "M"
+THEME.git.deleted_sign   = "D"
+THEME.git.added_sign     = "A"
+THEME.git.untracked_sign = "U"
+THEME.git.ignored_sign   = "I"
+THEME.git.updated_sign   = "?"
