@@ -42,6 +42,11 @@ install_macos() {
   echo "Tools installieren: ${tools[*]}"
   brew install "${tools[@]}"
 
+  # JetBrains Mono Nerd Font installieren
+  echo "JetBrains Mono Nerd Font installieren..."
+  brew tap homebrew/cask-fonts
+  brew install --cask font-jetbrains-mono-nerd-font
+
   # SketchyBar installieren
   echo "SketchyBar installieren..."
   brew tap FelixKratz/formulae
@@ -89,6 +94,7 @@ install_linux() {
     yazi
     git
     git stow
+    ttf-jetbrains-mono-nerd
   )
 
   echo "Tools installieren: ${tools[*]}"
