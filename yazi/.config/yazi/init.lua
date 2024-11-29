@@ -1,6 +1,6 @@
 local gruvbox_material_theme = require("yatline-gruvbox-material"):setup({ mode = "dark", toughness = "soft" })
 --local catppuccin_theme = require("yatline-catppuccin"):setup("mocha")
-
+require("git"):setup()
 require("full-border"):setup()
 require("yatline"):setup({
 	theme = gruvbox_material_theme,
@@ -52,8 +52,6 @@ require("yatline"):setup({
 			section_b = {
 			},
 			section_c = {
-					{type = "string", custom = false, name = "hovered_path"},				
-					{type = "string", custom = false, name = "hovered_size"},
 			}
 		},
 		right = {
@@ -135,3 +133,8 @@ require("yatline-githead"):setup({
 	untracked_color = "blue",
 	untracked_symbol = "?",
 })
+
+-- style git.yazi plugin
+THEME.git = THEME.git or {}
+THEME.git.modified_sign = "M"
+THEME.git.deleted_sign = "D"
