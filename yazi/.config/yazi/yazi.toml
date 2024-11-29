@@ -6,7 +6,7 @@ sort_by        = "natural"
 sort_sensitive = false
 sort_reverse   = false
 sort_dir_first = true
-linemode       = "mtime"
+linemode       = "none"
 show_hidden    = true
 show_symlink   = false
 scrolloff      = 5
@@ -27,3 +27,12 @@ prepend_previewers = [
   { name = "*.md", run = "mdcat" },
 ]
 
+[[plugin.prepend_fetchers]]
+id   = "git"
+name = "*"
+run  = "git"
+
+[[plugin.prepend_fetchers]]
+id   = "git"
+name = "*/"
+run  = "git"
