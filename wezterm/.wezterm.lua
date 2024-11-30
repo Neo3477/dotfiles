@@ -3,7 +3,7 @@ local wezterm = require 'wezterm'
 local config = {}
 
 --Farbschema
-config.color_scheme = 'Gruvbox Material (Gogh)'
+config.color_scheme = 'Catppuccin Mocha (Gogh)'
 
 --Font Config
 config.font = wezterm.font("JetBrainsMono Nerd Font Mono", {weight = "Thin"})
@@ -27,7 +27,7 @@ config.use_fancy_tab_bar = false
 config.enable_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = false
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
-config.window_background_opacity = 0.80
+config.window_background_opacity = 0.60
 config.macos_window_background_blur = 20
 
 return config

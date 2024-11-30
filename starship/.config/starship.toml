@@ -3,7 +3,7 @@
 
 # Sets user-defined palette
 # Palettes must be defined _after_ this line
-palette = "gruvbox_dark"
+palette = "catppuccin_mocha"
 
 # Starship modules
 [character]

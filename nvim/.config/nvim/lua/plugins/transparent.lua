@@ -25,5 +25,12 @@ require('transparent').setup{
         "EndOfBuffer",
         "WinSeparator",
     },
-    extra_groups = { "NeoTreeNormal", "NeoTreeNormalNC", "NeoTreeCursorLine", "" },
+    extra_groups = {
+		"NormalFloat",
+		"NeoTreeNormal",
+		"NeoTreeNormalNC",
+		"NeoTreeCursorLine",
+                "NvimTreeEndOfBuffer",
+		"" 
+	},
 }

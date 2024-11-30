@@ -1,10 +1,10 @@
-local gruvbox_material_theme = require("yatline-gruvbox-material"):setup({ mode = "dark", toughness = "soft" })
---local catppuccin_theme = require("yatline-catppuccin"):setup("mocha")
+--local gruvbox_material_theme = require("yatline-gruvbox-material"):setup({ mode = "dark", toughness = "soft" })
+local catppuccin_theme = require("yatline-catppuccin"):setup("mocha")
 require("git"):setup()
 require("full-border"):setup()
 require("yatline"):setup({
-	theme = gruvbox_material_theme,
---	theme = catppuccin_theme,
+--	theme = gruvbox_material_theme,
+	theme = catppuccin_theme,
 	section_separator = { open = "", close = "" },
 	part_separator = { open = "", close = "" },
 	inverse_separator = { open = "", close = "" },
@@ -39,7 +39,7 @@ require("yatline"):setup({
 	found = { icon = "󰮕", fg = "blue" },
 	processed = { icon = "󰐍", fg = "green" },
 
-	show_background = true,
+	show_background = false,
 
 	display_header_line = true,
 	display_status_line = true,

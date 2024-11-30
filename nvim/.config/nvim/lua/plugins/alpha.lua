@@ -18,7 +18,7 @@ dashboard.section.header.val = {
 }
 
 -- Header farblich anpassen
-vim.api.nvim_set_hl(0, "DashboardHeader", { fg = "#458588" }) -- Hex-Code für die gewünschte Farbe
+vim.api.nvim_set_hl(0, "DashboardHeader", { fg = "#89b4fa" }) -- Hex-Code für die gewünschte Farbe
 
 -- Der Header wird der neuen Highlight-Gruppe zugewiesen
 dashboard.section.header.opts.hl = "DashboardHeader"
