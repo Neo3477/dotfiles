@@ -8,16 +8,30 @@ palette = "catppuccin_mocha"
 # Starship modules
 [character]
 # Note the use of Catppuccin color 'peach'
-success_symbol = "[[󰄛](color_green) ❯](color_purple)"
-error_symbol = "[[󰄛](color_red) ❯](color_purple)"
-vimcmd_symbol = "[󰄛 ❮](color_fg0)" # For use with zsh-vi-mode
+success_symbol = "[[󰄛](green) ❯](pink)"
+error_symbol = "[[󰄛](red) ❯](pink)"
+vimcmd_symbol = "[󰄛 ❮](teal)" # For use with zsh-vi-mode
 
 [git_branch]
-style = "bold color_purple"
+style = "red"
+format = "on [$symbol$branch(:$remote_branch)]($style) "
+always_show_remote = false
+
+[git_status]
+modified = '[!$count](yellow)'
+untracked = '[?$count](lavender)'
+staged = '[+$count](red)'
+diverged = '${modified_count}${untracked_count}${staged_count}'
 
 [directory]
-truncation_length = 4
-style = "bold color_aqua"
+truncation_length = 5
+style = "green"
+
+[env_var.yazi_level]
+description = "Indicate the shell was launched by `yazi`"
+variable = "YAZI_LEVEL"
+symbol = "󰇥 Yazi"
+format = "in [ $symbol ](blue)"
 
 # Palette definitions
 
