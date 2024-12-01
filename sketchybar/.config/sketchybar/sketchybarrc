@@ -5,12 +5,12 @@ PLUGIN_DIR="$CONFIG_DIR/plugins"
 sketchybar --bar position=top \
                  height=30 \
                  blur_radius=30 \
-                 color=0xFF1e1e1e \
+                 color=0xFF1e1e2e \
                  margin=20 \
                  corner_radius=8 \
                  y_offset=7 \
                  border_width=1 \
-                 border_color=0xff83a598 \
+                 border_color=0xff89b4fa \
 
 # ~~ default ~~
 
@@ -19,14 +19,14 @@ default=(
   padding_right=0
   icon.font="JetBrainsMono Nerd Font:Thin:14.0"
   label.font="JetBrainsMono Nerd Font:Thin:12.0"
-  icon.color=0xffab9881
-  label.color=0xffab9881
+  icon.color=0xffcdd6f4
+  label.color=0xffcdd6f4
   icon.padding_left=0
   icon.padding_right=0
   label.padding_left=10
   label.padding_right=10
   background.border_width=1
-  background.color=0xFF1e1e1e
+  # background.color=0xFF89b4fa    # backgound color ist nur für die Items
   background.padding_left=0
   background.padding_right=10
   background.corner_radius=10 
@@ -38,7 +38,7 @@ sketchybar --default "${default[@]}"
 
 APPLE=(
   icon=
-  icon.color=0xffaab01e
+  icon.color=0xffa6e3a1
   icon.padding_left=0
   label.drawing=off
   background.padding_left=0
@@ -57,8 +57,8 @@ sketchybar --add event aerospace_workspace_change \
 # Workspace Icons
 
 SPACE_ICONS=("" "" "")
-SPACE_ICON_COLOR_ACTIVE=0xff83a598   
-SPACE_ICON_COLOR_INACTIVE=0xfffb4934 
+SPACE_ICON_COLOR_ACTIVE=0xff89b4fa   
+SPACE_ICON_COLOR_INACTIVE=0xfff38ba8 
 
 for sid in $(aerospace list-workspaces --all); do
     icon_index=$((sid - 1))
@@ -104,7 +104,7 @@ sketchybar --add item front_app centre \
 # time
 sketchybar --add item time right                                    \
            --set      time icon=󱑎                                   \
-                           icon.color=0xfffb4934                    \
+                           icon.color=0xfff38ba8                    \
                            background.border_color=0xFF1e1e1e       \
                            label.padding_right=0                    \
                            background.padding_right=0               \
@@ -115,7 +115,7 @@ sketchybar --add item time right                                    \
 # date
 sketchybar --add item date right                                    \
            --set      date icon=󱨰                                   \
-                           icon.color=0xfff7b125                    \
+                           icon.color=0xfffab387                    \
                            background.border_color=0xFF1e1e1e       \
                            label="$(date '+%a %b %d')"              \
                            script='./scripts/date.sh'               \
@@ -124,7 +124,7 @@ sketchybar --add item date right                                    \
 # weather
 sketchybar --add item weather right                                 \
            --set      weather icon=A                                \
-                              icon.color=0xff719586                 \
+                              icon.color=0xff89b4fa                 \
                               background.border_color=0xFF1e1e1e    \
                               label="--°C"                          \
                               script='./scripts/weather.sh'         \
@@ -133,7 +133,7 @@ sketchybar --add item weather right                                 \
 # battery
 sketchybar --add item battery right                                 \
            --set      battery icon=                                \
-                              icon.color=0xffaab01e                 \
+                              icon.color=0xffa6e3a1                 \
                               background.border_color=0xFF1e1e1e    \
                               label="--%"                           \
                               script='./scripts/battery.sh'         \
