@@ -4,7 +4,7 @@ after-login-command = []
 # ~~ Start Command nach dem Programmstart ~~
 after-startup-command = [
     'exec-and-forget sketchybar',
-    'exec-and-forget /opt/homebrew/bin/borders active_color=0xff83a598 inactive_color=0xff83a598 width=4.0 style=round',
+    'exec-and-forget /opt/homebrew/bin/borders active_color=0xff89b4fa inactive_color=0xff89b4fa width=4.0 style=round',
 ]
 
 exec-on-workspace-change = [
