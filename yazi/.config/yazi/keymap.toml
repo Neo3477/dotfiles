@@ -4,6 +4,22 @@ run  = "plugin lazygit"
 desc = "run lazygit"
 
 [[manager.prepend_keymap]]
+on   = [ "g", "p" ]
+run  = "cd ~/Pictures"
+desc = "go to the Pictures Directory"
+
+[[manager.prepend_keymap]]
+on   = [ "g", "k" ]
+run  = "cd ~/Documents"
+desc = "go to the Documents Directory"
+
+[[manager.prepend_keymap]]
+on   = [ "g", "f" ]
+run  = "cd ~/dotfiles"
+desc = "go to the Dotfiles Directory"
+
+
+[[manager.prepend_keymap]]
 on   = "t"
 run  = "plugin --sync smart-tab"
 desc = "Create a tab and enter the hovered directory"
@@ -19,4 +35,16 @@ desc = "Enter the child directory, or open the file"
 on = "A" 
 run = "create --dir"
 desc = "Create a directory"
+
+[[manager.prepend_keymap]]
+on   = "T"
+run  = "plugin --sync max-preview"
+# For upcoming Yazi 0.4 (nightly version):
+# run  = "plugin max-preview"
+desc = "Maximize or restore preview"
+
+[[manager.prepend_keymap]]
+on   = "!"
+run  = 'shell "$SHELL" --block --confirm'
+desc = "Open shell here"
 
