@@ -1,5 +1,5 @@
 --local gruvbox_material_theme = require("yatline-gruvbox-material"):setup({ mode = "dark", toughness = "soft" })
-local catppuccin_theme = require("yatline-catppuccin"):setup("mocha")
+local catppuccin_theme = require("yatline-catppuccin"):setup("latte")
 require("git"):setup()
 require("full-border"):setup()
 require("yatline"):setup({
@@ -135,10 +135,10 @@ require("yatline-githead"):setup({
 })
 
 -- style git.yazi plugin
-THEME.git = THEME.git or {}
-THEME.git.modified_sign  = "M"
-THEME.git.deleted_sign   = "D"
-THEME.git.added_sign     = "A"
-THEME.git.untracked_sign = "U"
-THEME.git.ignored_sign   = "I"
-THEME.git.updated_sign   = "?"
+--THEME.git = THEME.git or {}
+--THEME.git.modified_sign  = "M"
+--THEME.git.deleted_sign   = "D"
+--THEME.git.added_sign     = "A"
+--THEME.git.untracked_sign = "U"
+--THEME.git.ignored_sign   = "I"
+--THEME.git.updated_sign   = "?"
