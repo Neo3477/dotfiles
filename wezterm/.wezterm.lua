@@ -30,7 +30,7 @@ config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
 config.window_background_opacity = 1.00
 config.macos_window_background_blur = 20
 
--- Modell-Wechsel mit Option + p
+-- Claude Code Modell-Wechsel mit Option + p
 config.keys = {
   {
     key = 'p',
