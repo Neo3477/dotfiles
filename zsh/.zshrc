@@ -68,3 +68,4 @@ alias lg="Lazygit"
 
 eval $(thefuck --alias)
 eval "$(starship init zsh)"
+export PATH="$HOME/.local/bin:$PATH"
