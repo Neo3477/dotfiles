@@ -34,10 +34,8 @@ require("yatline"):setup({
 	cut = { icon = "", fg = "red" },
 
 	total = { icon = "󰮍", fg = "yellow" },
-	succ = { icon = "", fg = "green" },
-	fail = { icon = "", fg = "red" },
-	found = { icon = "󰮕", fg = "blue" },
-	processed = { icon = "󰐍", fg = "green" },
+	success = { icon = "", fg = "green" },
+	failed = { icon = "", fg = "red" },
 
 	show_background = false,
 

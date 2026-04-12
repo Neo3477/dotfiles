@@ -24,15 +24,15 @@ ueberzug_offset = [ 10, 10, 10, 10 ]
 
 [plugin]
 prepend_previewers = [
-  { name = "*.md", run = "mdcat" },
+  { url = "*.md", run = "mdcat" },
 ]
 
 [[plugin.prepend_fetchers]]
 id   = "git"
-name = "*"
+url  = "*"
 run  = "git"
 
 [[plugin.prepend_fetchers]]
 id   = "git"
-name = "*/"
+url  = "*/"
 run  = "git"
