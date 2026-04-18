@@ -22,9 +22,21 @@ sixel_fraction  = 10
 ueberzug_scale  = 1
 ueberzug_offset = [ 10, 10, 10, 10 ]
 
+#[plugin]
+#prepend_previewers = [
+#  { url = "*.md", run = "mdcat" },
+#]
+
 [plugin]
-prepend_previewers = [
-  { url = "*.md", run = "mdcat" },
+previewers = [
+  { name = "*/", run = "folder", sync = true },
+  { name = "*.md", run = "preview" },
+  { name = "*.csv", run = "preview" },
+  { mime = "text/*", run = "code" },
+  { mime = "*/xml", run = "code" },
+  { mime = "*/javascript", run = "code" },
+  { mime = "*/x-wine-extension-ini", run = "code" },
+  { name = "*", run = "preview" },
 ]
 
 [[plugin.prepend_fetchers]]

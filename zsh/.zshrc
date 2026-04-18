@@ -37,6 +37,9 @@ fzf_find_edit() {
     fi
 }
 
+autoload -U compinit; compinit
+source ~/.oh-my-zsh/custom/plugins/fzf-tab/fzf-tab.plugin.zsh
+
 # aktive Plugins
 plugins=(
 	git 
@@ -70,3 +73,12 @@ eval $(thefuck --alias)
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 export PATH="$HOME/.local/bin:$PATH"
+
+# bun completions
+[ -s "/Users/marcogaebel/.bun/_bun" ] && source "/Users/marcogaebel/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+alias claude-mem='/Users/marcogaebel/.bun/bin/bun "/Users/marcogaebel/.claude/plugins/cache/thedotmack/claude-mem/12.1.6/scripts/worker-service.cjs"'

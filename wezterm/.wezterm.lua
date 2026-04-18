@@ -7,11 +7,11 @@ config.color_scheme = 'Catppuccin Mocha (Gogh)'
 
 --Font Config
 config.font = wezterm.font("JetBrainsMono Nerd Font Mono", {weight = "Thin"})
-config.font_size = 17
+config.font_size = 14
 
 --höhe und breite des Fensters
-config.initial_cols = 160
-config.initial_rows = 43
+config.initial_cols = 190
+config.initial_rows = 46
 
 config.adjust_window_size_when_changing_font_size = false
 
@@ -27,7 +27,7 @@ config.use_fancy_tab_bar = false
 config.enable_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = false
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
-config.window_background_opacity = 1.00
+config.window_background_opacity = 0.60
 config.macos_window_background_blur = 20
 
 -- Claude Code Modell-Wechsel mit Option + p
@@ -48,6 +48,16 @@ config.keys = {
         end
       end),
     },
+  },
+{
+    key = 'd',
+    mods = 'CMD|SHIFT',
+    action = wezterm.action.SplitVertical
+  },
+{
+    key = 'd',
+    mods = 'CMD',
+    action = wezterm.action.SplitHorizontal
   },
 }
 
