@@ -15,6 +15,8 @@ export GOPATH=$(go env GOPATH)
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 
+source <(fzf --zsh)
+
 # FZF Styling Options
 fzf_find_edit() {
     local file=$(
@@ -37,24 +39,24 @@ fzf_find_edit() {
     fi
 }
 
-# preview directory's content with eza when completing cd
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
-
-autoload -U compinit; compinit
-source ~/.oh-my-zsh/custom/plugins/fzf-tab/fzf-tab.plugin.zsh
-
 # aktive Plugins
 plugins=(
-	git 
-	zsh-autosuggestions 
-	zsh-syntax-highlighting 
-	zsh-interactive-cd 
+	git
+	zsh-autosuggestions
+	zsh-syntax-highlighting
+	zsh-interactive-cd
 	thefuck
-	fzf-tab
 )
 
 source $ZSH/oh-my-zsh.sh
-source <(fzf --zsh)
+
+# fzf-tab must be loaded after compinit (which oh-my-zsh calls internally)
+source ~/.oh-my-zsh/custom/plugins/fzf-tab/fzf-tab.plugin.zsh
+
+# preview directory's content with eza when completing cd
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always --icons=always --group-directories-first "$realpath"'
+
+#source <(fzf --zsh)
 
 # Aliases
 alias ls="eza --icons=always --git --no-user --group-directories-first"
