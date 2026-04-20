@@ -5,7 +5,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export EDITOR=nvim
 
 # Set bat Theme
-export BAT_THEME="gruvbox-dark"
+export BAT_THEME="Catppuccin Mocha"
 
 # Set Eza config Path
 export EZA_CONFIG_DIR="${HOME}/.config/eza"
@@ -37,6 +37,9 @@ fzf_find_edit() {
     fi
 }
 
+# preview directory's content with eza when completing cd
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
+
 autoload -U compinit; compinit
 source ~/.oh-my-zsh/custom/plugins/fzf-tab/fzf-tab.plugin.zsh
 
@@ -47,6 +50,7 @@ plugins=(
 	zsh-syntax-highlighting 
 	zsh-interactive-cd 
 	thefuck
+	fzf-tab
 )
 
 source $ZSH/oh-my-zsh.sh
