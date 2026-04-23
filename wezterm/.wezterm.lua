@@ -30,25 +30,8 @@ config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
 config.window_background_opacity = 1.00
 config.macos_window_background_blur = 20
 
--- Claude Code Modell-Wechsel mit Option + p
+--Shortcuts
 config.keys = {
-  {
-    key = 'p',
-    mods = 'OPT',
-    action = wezterm.action.InputSelector {
-      title = 'Claude Modell wählen',
-      choices = {
-        { label = 'claude-sonnet-4-6',      id = 'claude-sonnet-4-6' },
-        { label = 'claude-opus-4-6',        id = 'claude-opus-4-6' },
-        { label = 'claude-haiku-4-5-20251001', id = 'claude-haiku-4-5-20251001' },
-      },
-      action = wezterm.action_callback(function(window, pane, id, label)
-        if id then
-          pane:send_text('/model ' .. id .. '\n')
-        end
-      end),
-    },
-  },
 {
     key = 'd',
     mods = 'CMD|SHIFT',
@@ -59,7 +42,11 @@ config.keys = {
     mods = 'CMD',
     action = wezterm.action.SplitHorizontal
   },
-    { key = '7', mods = 'OPT', action = wezterm.action.SendString('|') },		
+{ 
+    key = '7', 
+    mods = 'OPT', 
+    action = wezterm.action.SendString('|') 
+  },		
 }
 use_dead_keys = false
 
