@@ -59,6 +59,8 @@ config.keys = {
     mods = 'CMD',
     action = wezterm.action.SplitHorizontal
   },
+    { key = '7', mods = 'OPT', action = wezterm.action.SendString('|') },		
 }
+use_dead_keys = false
 
 return config
