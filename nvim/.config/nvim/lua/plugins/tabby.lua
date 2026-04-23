@@ -1,10 +1,11 @@
+-- Catppuccin Mocha palette
 local theme = {
   fill = 'TabLineFill',
-  head = { fg = '#8aadf4', bg = '#24273a', style = 'italic' },
-  current_tab = { fg = '#1e2030', bg = '#8aadf4', style = 'italic' },
-  tab = { fg = '#8aadf4', bg = '#24273a', style = 'italic' },
-  win = { fg = '#1e2030', bg = '#8aadf4', style = 'italic' },
-  tail = { fg = '#8aadf4', bg = '#24273a', style = 'italic' },
+  head = { fg = '#89b4fa', bg = '#1e1e2e', style = 'italic' },
+  current_tab = { fg = '#181825', bg = '#89b4fa', style = 'italic' },
+  tab = { fg = '#89b4fa', bg = '#1e1e2e', style = 'italic' },
+  win = { fg = '#181825', bg = '#89b4fa', style = 'italic' },
+  tail = { fg = '#89b4fa', bg = '#1e1e2e', style = 'italic' },
 }
 
 require('tabby.tabline').set(function(line)

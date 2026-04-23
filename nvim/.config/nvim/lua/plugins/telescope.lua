@@ -42,5 +42,3 @@ telescope.setup({
   },
 })
 
--- Farben für Catppuccin Mocha definieren
-local catppuccin_colors
