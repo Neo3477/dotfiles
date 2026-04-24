@@ -73,7 +73,12 @@ config.keys = {
     key = '7', 
     mods = 'OPT', 
     action = wezterm.action.SendString('|') 
-  },		
+  },
+{
+    key = 'Z',
+    mods = 'CMD|SHIFT',
+    action = wezterm.action.TogglePaneZoomState,
+  },	
 }
 use_dead_keys = false
 
