@@ -79,14 +79,12 @@
     {
       "type": "memory",
       "key": "  󰍛",
-      "keyColor": "bright_yellow",
-      "format": "{4} {2}"
+      "keyColor": "bright_yellow"
     },
     {
       "type": "disk",
       "key": "  ",
-      "keyColor": "bright_cyan",
-      "format": "{13} {2}"
+      "keyColor": "bright_cyan"
     },
     "break",
     {
