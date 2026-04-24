@@ -45,13 +45,13 @@
         "type": "memory",
         "key": "  󰍛",
         "keyColor": "bright_yellow",
-        "format":""
+        "format":"{used} / {total}"
       },
       {
         "type": "disk",
         "key": "  ",
         "keyColor": "bright_cyan",
-        "format":""
+        "format":"{size-used} / {size-total}"
       },
       "break",
 
