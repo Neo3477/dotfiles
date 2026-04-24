@@ -23,6 +23,12 @@ config.window_padding = {
   bottom = "2cell",
 }
 
+-- Inaktive Panes abdunkeln ausgeschaltet
+config.inactive_pane_hsb = {
+  saturation = 1.0, 
+  brightness = 1.0, 
+}
+
 config.use_fancy_tab_bar = false
 config.enable_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = false
