@@ -1,5 +1,6 @@
 
 local wezterm = require 'wezterm'
+local act = wezterm.action
 local config = {}
 
 --Farbschema
@@ -38,6 +39,26 @@ config.macos_window_background_blur = 20
 
 --Shortcuts
 config.keys = {
+{
+    key = 'LeftArrow',
+    mods = 'CMD',
+    action = act.ActivatePaneDirection 'Left',
+  },
+{
+    key = 'RightArrow',
+    mods = 'CMD',
+    action = act.ActivatePaneDirection 'Right',
+  },
+{
+    key = 'UpArrow',
+    mods = 'CMD',
+    action = act.ActivatePaneDirection 'Up',
+  },
+{
+    key = 'DownArrow',
+    mods = 'CMD',
+    action = act.ActivatePaneDirection 'Down',
+  },	
 {
     key = 'd',
     mods = 'CMD|SHIFT',
