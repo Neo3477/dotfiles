@@ -18,30 +18,10 @@ on   = [ "g", "f" ]
 run  = "cd ~/dotfiles"
 desc = "go to the Dotfiles Directory"
 
-
-[[mgr.prepend_keymap]]
-on   = "t"
-run  = "plugin --sync smart-tab"
-desc = "Create a tab and enter the hovered directory"
-
-[[mgr.prepend_keymap]]
-on   = "l"
-run  = "plugin --sync smart-enter"
-# For upcoming Yazi 0.4 (nightly version):
-# run  = "plugin smart-enter"
-desc = "Enter the child directory, or open the file"
-
 [[mgr.prepend_keymap]]
 on = "A" 
 run = "create --dir"
 desc = "Create a directory"
-
-[[mgr.prepend_keymap]]
-on   = "T"
-run  = "plugin --sync max-preview"
-# For upcoming Yazi 0.4 (nightly version):
-# run  = "plugin max-preview"
-desc = "Maximize or restore preview"
 
 [[mgr.prepend_keymap]]
 on   = "!"
