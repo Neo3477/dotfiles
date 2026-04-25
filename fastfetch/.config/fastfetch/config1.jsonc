@@ -17,7 +17,8 @@
       {
         "type": "os",
         "key": "  ",
-        "keyColor": "blue"
+        "keyColor": "blue",
+	"format": "{name} {codename} {version}"		
       },
       
       {
@@ -25,7 +26,6 @@
         "key": "  ",
         "keyColor": "yellow"
       },
- 
       {
         "type": "host",
         "key": "  ",
