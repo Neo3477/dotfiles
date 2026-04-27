@@ -18,10 +18,10 @@ config.adjust_window_size_when_changing_font_size = false
 
 --Abstand des Inhalts zum rand
 config.window_padding = {
-  left = "3cell",
-  right = "2cell",
-  top = "2cell",
-  bottom = "2cell",
+  left = "4cell",
+  right = "3cell",
+  top = "3cell",
+  bottom = "3cell",
 }
 
 -- Inaktive Panes abdunkeln ausgeschaltet
@@ -80,6 +80,6 @@ config.keys = {
     action = wezterm.action.TogglePaneZoomState,
   },	
 }
-use_dead_keys = false
+use_dead_keys = false 
 
 return config
