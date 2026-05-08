@@ -33,6 +33,27 @@ variable = "YAZI_LEVEL"
 symbol = "󰇥 Yazi"
 format = "in [ $symbol ](blue)"
 
+# Customize the claude-code profile
+[profiles]
+claude-code = "$character$directory$git_branch$git_status$claude_model$claude_context"
+
+# Configure individual modules
+[claude_model]
+format = "on [$symbol$model]($style) "
+symbol = "🧠 "
+style = "bold cyan"
+
+[claude_context]
+gauge_full_symbol = "▰"
+gauge_partial_symbol = ""
+gauge_empty_symbol = "▱"
+gauge_width = 10
+format = "[$gauge]($style) "
+
+[claude_cost]
+format = "[$symbol$cost]($style) "
+symbol = "💰 "
+
 # Palette definitions
 
 [palettes.gruvbox_dark]
