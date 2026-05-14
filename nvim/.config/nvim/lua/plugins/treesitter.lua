@@ -1,15 +1,3 @@
-require('nvim-treesitter.configs').setup({
-    ensure_installed = {
-        "lua",
-        "markdown",
-        "markdown_inline",
-        "html",
-    },
-    highlight = {
-        enable = true,
-        additional_vim_regex_highlighting = false,
-    },
-    indent = {
-        enable = true
-    },
-})
+-- Neovim 0.12+ has built-in treesitter support (no nvim-treesitter plugin needed)
+-- Bundled parsers: c, lua, markdown, markdown_inline, query, vim, vimdoc
+-- Highlighting is enabled automatically by Neovim's ftplugin system
