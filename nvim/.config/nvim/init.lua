@@ -73,7 +73,6 @@ require("lazy").setup({
     'nvimdev/lspsaga.nvim',
     config = function() require('lspsaga').setup({}) end,
     dependencies = {
-      'nvim-treesitter/nvim-treesitter',
       'nvim-tree/nvim-web-devicons'
     }
   },
@@ -82,18 +81,9 @@ require("lazy").setup({
     config = function() require("plugins.markview") end,
     lazy = false,
     dependencies = {
-      "nvim-treesitter/nvim-treesitter",
       "nvim-tree/nvim-web-devicons"
     }
   },
-  {
-    "nvim-treesitter/nvim-treesitter",
-    build = ":TSUpdate",
-    config = function() 
-        require("plugins.treesitter")
-    end,
-    priority = 1000, -- Hohe Priorität, da andere Plugins davon abhängen
-},
 ---@type LazySpec
 {
   "mikavilpas/yazi.nvim",
