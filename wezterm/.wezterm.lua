@@ -8,7 +8,7 @@ config.color_scheme = 'Catppuccin Mocha (Gogh)'
 
 --Font Config
 config.font = wezterm.font("JetBrainsMono Nerd Font Mono", {weight = "Thin"})
-config.font_size = 15
+config.font_size = 18
 
 --höhe und breite des Fensters
 config.initial_cols = 174
