@@ -11,8 +11,8 @@ config.font = wezterm.font("JetBrainsMono Nerd Font Mono", {weight = "Thin"})
 config.font_size = 18
 
 --höhe und breite des Fensters
-config.initial_cols = 174
-config.initial_rows = 40
+config.initial_cols = 142
+config.initial_rows = 32
 
 config.adjust_window_size_when_changing_font_size = false
 
