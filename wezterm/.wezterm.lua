@@ -34,8 +34,8 @@ config.use_fancy_tab_bar = false
 config.enable_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = false
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
-config.window_background_opacity = 0.80
-config.macos_window_background_blur =70
+config.window_background_opacity = 0.10
+config.macos_window_background_blur =00
 
 --Shortcuts
 config.keys = {
@@ -78,7 +78,17 @@ config.keys = {
     key = 'Z',
     mods = 'CMD|SHIFT',
     action = wezterm.action.TogglePaneZoomState,
-  },	
+  },
+  {
+    key = 'b',
+    mods = 'CTRL',
+    action = act.RotatePanes 'CounterClockwise',
+  },
+  { 
+    key = 'n', 
+    mods = 'CTRL', 
+    action = act.RotatePanes 'Clockwise' 
+  },
 }
 use_dead_keys = false 
 
